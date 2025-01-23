@@ -77,9 +77,6 @@ app.engine('ejs', ejsmate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 
-app.get("/", (req, res) => {
-    res.send("root is working");
-});
 
 app.get("/register", async(req,res)=>{
     let fake = new User({
